@@ -12,7 +12,11 @@ public class Main3 {
         int[] numbers = new int[arraySize];
 
         for(int i = 0; i < arraySize; i++){
-            numbers[i] = i + 1;
+            Scanner input1 = new Scanner(System.in);
+            System.out.println("Enter Array[" + i + "]: ");
+            String string1 = input1.nextLine();
+            int arrayInteger = Integer.parseInt(string1);
+            numbers[i] = arrayInteger;
         }
 
         int sum = 0;

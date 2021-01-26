@@ -12,8 +12,7 @@ public class Main3 {
 
         for(int i = 0; i < arraySize; i++){
             System.out.println("Enter Array[" + i + "]: ");
-            int arrayInteger = input.nextInt();
-            numbers[i] = arrayInteger;
+            numbers[i] = input.nextInt();
         }
 
         int sum = 0;

@@ -6,12 +6,12 @@ public class Main3 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Please specify array size: ");
+        System.out.print("Please specify array size: ");
         int arraySize = input.nextInt();
         int[] numbers = new int[arraySize];
 
         for(int i = 0; i < arraySize; i++){
-            System.out.println("Enter Array[" + i + "]: ");
+            System.out.print("Enter Array[" + i + "]: ");
             numbers[i] = input.nextInt();
         }
 

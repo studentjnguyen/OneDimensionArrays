@@ -7,24 +7,33 @@ public class Main3 {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Please specify array size: ");
-        String string = input.nextLine();
-        int arraySize = Integer.parseInt(string);
+        int arraySize = input.nextInt();
         int[] numbers = new int[arraySize];
 
         for(int i = 0; i < arraySize; i++){
-            Scanner input1 = new Scanner(System.in);
             System.out.println("Enter Array[" + i + "]: ");
-            String string1 = input1.nextLine();
-            int arrayInteger = Integer.parseInt(string1);
+            int arrayInteger = input.nextInt();
             numbers[i] = arrayInteger;
         }
 
         int sum = 0;
         for(int i = 0; i < arraySize; i++){
+
             sum += numbers[i];
         }
 
-        System.out.println(sum);
+
+        StringBuilder formula = new StringBuilder();
+        for(int i = 0; i < arraySize; i++){
+            if (numbers[i] == 5){
+                formula.append(numbers[i]);
+            }
+            else {
+                formula.append(numbers[i]).append(" + ");
+            }
+        }
+
+        System.out.println(formula + " = " + sum);
         input.close();
     }
 }

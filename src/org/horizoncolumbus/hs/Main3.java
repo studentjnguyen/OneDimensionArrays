@@ -6,6 +6,7 @@ public class Main3 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+        System.out.println("Please specify array size: ");
         String string = input.nextLine();
         int arraySize = Integer.parseInt(string);
         int[] numbers = new int[arraySize];

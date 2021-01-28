@@ -24,7 +24,7 @@ public class Main3 {
 
         StringBuilder formula = new StringBuilder();
         for(int i = 0; i < arraySize; i++){
-            if (numbers[i] == 5){
+            if (numbers[i] == arraySize){
                 formula.append(numbers[i]);
             }
             else {
